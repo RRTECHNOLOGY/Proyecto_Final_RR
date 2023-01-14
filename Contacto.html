@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<style>
+    body{ 
+        background-image: url("imagenes/IMG_1850.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 52% 100%;
+        background-color:rgb(133, 198, 201);
+    }
+    </style>
+<nav>
+    <a href="index.html" class="nav-enlace">Inicio</a>
+    <a href="Nosotros.html" class="nav-enlace">Nosotros</a>
+    <a href="Fauna.html" class="nav-enlace">Fauna</a>
+    <a href="Flora.html" class="nav-enlace">Flora</a>
+    <a href="Contacto.html" class="nav-enlace">Contacto</a>
+</nav>
+    <h2 style="color:rgb(233, 228, 228)"  >Encuesta sobre la importancia de mantener la Naturaleza viva!</h2>
+    <form >
+        <h4 style="color:rgb(16, 16, 16)">Formulario de encuesta</h4>
+        <input class="e" type="text" class="form_nombre" id="nombre" placeholder="tu nombre">
+        <label for="nombre">Nombre</label>
+        <br>
+        <input class="e" type="text" class="form_apellido" id="" placeholder="tu apellido">
+        <label for="apellido">Apellido</label>
+        <br>
+        <input class="e" type="number" class="form_edad" name="edad" id="" placeholder="tu edad">
+        <label for="edad">Edad</label>
+        <br>
+        <input class="e" type="text" class="form_mascota" id="" placeholder="nombre de tu árbol favorito">
+        <label for="mascota">Tu árbol preferido</label>
+        <br>
+        <input class="e" type="text" class="form_raza" name="raza" id="árbol" placeholder="una palabra para tu árbol">
+        <label for="raza">Tipo de árbol</label>
+        <h5 style="color:rgb(27, 25, 25)">Qué tipo de arbol te gusta?</h5>
+       <input type="checkbox" name="Algarrobo" id="Algarrobo">
+       <label for="perro">Algarrobo</label>
+       <input type="checkbox" name="Jacaranda" id="Jacaranda">
+       <label for="caballo">Jacaranda</label>
+       <input type="checkbox" name="Ceibo" id="Ceibo">
+       <label for="conejo">Ceibo</label>
+        <h5 style="color:rgb(19, 19, 19)">Te gustaría apadrinar un árbol, dejanos tu comentario?</h5>
+        <input type="radio" id="si" name="si">
+        <label for="si">Si</label>
+        <input type="radio" id="no" name="no">
+        <label for="no">No</label>
+        <input type="submit" class="btn_enviar" value="Enviar">
+        <input type="button" value="Guardar">
+    </form>
+    <br>
+    <form action="contacto"> 
+        <input type="text" id="usuario" placeholder="tu nombre" class="cont"> <!--let user-->
+        <br>
+        <textarea name="" id="comentario" cols="30" rows="10" placeholder="tu comentario"></textarea><!--let coment-->
+        <br>
+        <input type="button" value="Enviar" onclick="crearComentario()"><!--evento onClick-->
+    </form>
+    <p id="salida"></p>
+
+        <script src="js/contacto.js"></script>
+             
+    <video src="videos/río Parque Algarrobos.mp4"controls></video>
+     
+</body>
+</html>
